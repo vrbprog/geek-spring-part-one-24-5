@@ -1,3 +1,5 @@
+<%@ page import="ru.geekbrains.persist.User" %>
+<%@ page import="java.util.List" %>
 <!doctype html>
 <html lang="en">
 
@@ -39,7 +41,7 @@
                 <input type="hidden" id="id" name="id">
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" class="form-control" id="name" name="username" placeholder="Enter username" value="TODO">
+                    <input type="text" class="form-control" id="name" name="username" placeholder="Enter username" value=<%= request.getParameter("name") %>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

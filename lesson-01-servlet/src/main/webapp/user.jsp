@@ -37,7 +37,7 @@
 <div class="container">
     <div class="row py-2">
         <div class="col-12">
-            <a class="btn btn-primary" href="user_form.html">Add User</a>
+            <a class="btn btn-primary" href="user_form.jsp?name=new_user">Add User</a>
         </div>
 
         <div class="col-12">
@@ -57,7 +57,7 @@
                     <th scope="row"><%= user.getId() %></th>
                     <td><%= user.getUsername() %></td>
                     <td>
-                        <a class="btn btn-success" href="user_form.html"><i class="fas fa-edit"></i></a>
+                        <a class="btn btn-success" href="user_form.jsp?name=<%= user.getUsername() %> "><i class="fas fa-edit"></i></a>
                         <a class="btn btn-danger" href="#"><i class="far fa-trash-alt"></i></a>
                     </td>
                 </tr>

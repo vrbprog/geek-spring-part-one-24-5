@@ -23,9 +23,9 @@ public class UserServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         this.userRepository = new UserRepository();
-        userRepository.insert(new User("User 1"));
-        userRepository.insert(new User("User 2"));
-        userRepository.insert(new User("User 3"));
+        userRepository.insert(new User("User_1"));
+        userRepository.insert(new User("User_2"));
+        userRepository.insert(new User("User_3"));
     }
 
     @Override
